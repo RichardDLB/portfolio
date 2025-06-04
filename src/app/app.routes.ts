@@ -1,25 +1,24 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NavComponent } from './components/nav/nav.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { ProfileComponent } from './pages/profile/profile.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 
 
 export const routes: Routes = [
     {
         path: "",
-        redirectTo: "dashboard",
+        redirectTo: "home",
         pathMatch: "full"
     },
 
     {
-        path: "dashboard",
-        component: DashboardComponent
+        path: "home",
+        component: HomeComponent
     },
 
     {
@@ -52,11 +51,6 @@ export const routes: Routes = [
         component: ContactoComponent
     },   
     
-    {
-        path: "profile",
-        component: ProfileComponent
-    },   
-
     {
         path: "FormLoginComponent",
         component: FormLoginComponent
