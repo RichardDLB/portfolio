@@ -1,0 +1,109 @@
+/* ESTUDIOS */
+.sectionEstudios {
+    background-image: url(../../../assets/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+}
+
+.titleEstudios {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    /* Ajustado a 9 caracteres */
+    overflow: hidden;
+    animation: typingEstudios 6s steps(8) infinite, blinkEstudios .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingEstudios {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 8ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 8ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkEstudios {
+    50% {
+        border-color: transparent;
+        /* Parpadeo del cursor */
+    }
+}
+
+.contenidoEstudios {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-estudios {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-estudios {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-estudios h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-estudios h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.carousel-item-estudios p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-estudios,
+.next-estudios {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-estudios {
+    left: 10px;
+}
+
+.next-estudios {
+    right: 10px;
+}

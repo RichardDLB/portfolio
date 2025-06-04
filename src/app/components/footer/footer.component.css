@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: dimgrey;
+    border-radius: 8px;
+    color: white;  
+    margin-top: 5px;
+    bottom: 0;
+    /* Bordes redondeados */
+}

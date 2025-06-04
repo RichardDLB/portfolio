@@ -1,0 +1,115 @@
+/* PROYECTOS */
+.sectionProyectos {
+    background-image: url(../../../assets/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+}
+
+.titleProyectos {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingProyectos 6s steps(9) infinite, blinkProyectos .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingProyectos {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 9ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 9ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkProyectos {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoProyectos {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-proyectos {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-proyectos {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-proyectos h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-proyectos h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.carousel-item-proyectos a {
+    text-decoration: none;
+    color: #45a049;
+}
+
+.carousel-item-proyectos p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev-proyectos,
+.next-proyectos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-proyectos {
+    left: 10px;
+}
+
+.next-proyectos {
+    right: 10px;
+}

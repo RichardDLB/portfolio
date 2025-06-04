@@ -1,0 +1,74 @@
+.containerLogin {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.containerFormLogin {
+    margin-top: 80px;
+    width: 100%;
+    background-image: url(../../../assets/img/fondoDos.jpg);
+    background-size: cover;
+    color: white;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form {
+    padding-top: 80px;
+}
+
+.form div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca el label encima del input */
+}
+
+.form label {
+    font-size: 2 rem; /* Tamaño de la fuente del label */
+    margin-bottom: 10px; /* Espacio entre el label y el input */
+}
+
+.form input {
+    font-size: 1 rem; /* Tamaño de la fuente del input */
+    padding: 10px; /* Espaciado interior del input */
+    width: 100%; /* Ancho del input */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.botonIngresar {
+    font-family: monospace;
+    background-color: #4CAF50;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+    color: white;
+    /* Color del texto */
+    padding: 15px 32px;
+    /* Espaciado interior */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar en línea */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    margin-left: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s;
+    /* Transición para el cambio de color */
+}
+
+.botonIngresar:hover {
+    background-color: #45a049;
+    /* Color de fondo al pasar el cursor */
+}

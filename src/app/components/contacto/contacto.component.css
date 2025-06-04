@@ -1,0 +1,99 @@
+/*CONTACTO*/
+.sectionContacto {
+    background-image: url(../../../assets/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+    font-family: monospace;
+}
+
+.titleContacto {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 8ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingContacto 6s steps(8) infinite, blinkContacto .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingContacto {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 8ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 8ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkContacto {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoContacto {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-contacto {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.formContacto {
+    padding: 50px;
+}
+
+.item-form {
+    width: 100%;
+    /* Ocupa el 50% del ancho de su contenedor */
+    padding: 10px;
+    /* Añade un poco de espacio interno */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+}
+
+.button-send {
+    margin-right: 10px;
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s ease; /* Transición suave */    
+}
+
+/* Cambia el color del botón al pasar el cursor */
+.button-send:hover {
+    background-color: #45a049; /* Color verde */
+}

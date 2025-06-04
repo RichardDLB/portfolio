@@ -1,0 +1,18 @@
+<section class="sectionProyectos" id="sectionProyectos">
+    <h2 class="titleProyectos">Proyectos</h2>
+    <div class="contenidoProyectos">
+        <div class="carousel-container-proyectos">
+            <!-- Elementos del carrusel -->
+            <div *ngFor="let itemProyectos of carouselItemsProyectos; let i = index" class="carousel-item-proyectos"
+                [class.active]="i === currentIndexProyectos"
+                [ngStyle]="{ 'transform': 'translateX(' + (-currentIndexProyectos * 100) + '%)' }">
+                <h3>{{ itemProyectos.title }}</h3>
+                <p>{{ itemProyectos.institution }}</p>
+                <a href="{{ itemProyectos.page }}" target="_blank">{{ itemProyectos.page }}</a>
+                <h5>{{ itemProyectos.description }}</h5>
+            </div>
+        </div>
+        <button class="prev-proyectos" (click)="moveCarouselProyectos(-1)">&#10094;</button>
+        <button class="next-proyectos" (click)="moveCarouselProyectos(1)">&#10095;</button>
+    </div>
+</section>

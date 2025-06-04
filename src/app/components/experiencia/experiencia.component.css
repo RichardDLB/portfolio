@@ -1,0 +1,118 @@
+/* EXPERIENCIA */
+.sectionExperiencia {
+    background-image: url(../../../assets/img/fondoDos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: dimgrey;
+    color: white;
+    justify-content: space-around;
+    background-color: dimgrey;
+    border-radius: 8px;
+    font-size: 250%;
+}
+
+.titleExperiencia {
+    color: #45a049;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+    /* Ajusta el ancho según el texto */
+    overflow: hidden;
+    /* Oculta el texto que se desborda */
+    animation: typingExperiencia 6s steps(11) infinite, blinkExperiencia .5s infinite step-end;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+@keyframes typingExperiencia {
+    0% {
+        width: 0;
+        /* Comienza con el texto oculto */
+    }
+
+    50% {
+        width: 11ch;
+        /* Muestra el texto completo */
+    }
+
+    80% {
+        width: 11ch;
+        /* Mantiene el texto completo (pausa) */
+    }
+
+    100% {
+        width: 0;
+        /* Oculta el texto nuevamente */
+    }
+}
+
+@keyframes blinkExperiencia {
+    50% {
+        border-color: transparent;
+    }
+
+}
+
+.contenidoExperiencia {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container-experiencia {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-experiencia {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.carousel-item-experiencia h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.carousel-item-experiencia h5 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+}
+
+.carousel-item-experiencia a {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #45a049;
+}
+
+.carousel-item-experiencia p {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.prev-experiencia,
+.next-experiencia {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #45a049;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-experiencia {
+    left: 10px;
+}
+
+.next-experiencia {
+    right: 10px;
+}

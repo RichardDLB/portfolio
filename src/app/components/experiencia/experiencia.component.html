@@ -1,0 +1,18 @@
+<section class="sectionExperiencia" id="sectionExperiencia">
+    <h2 class="titleExperiencia">Experiencia</h2>
+    <div class="contenidoExperiencia">
+        <div class="carousel-container-experiencia">
+            <!-- Elementos del carrusel -->
+            <div *ngFor="let itemExperiencia of carouselItemsExperiencia; let i = index" class="carousel-item-experiencia"
+                [class.active]="i === currentIndexExperiencia"
+                [ngStyle]="{ 'transform': 'translateX(' + (-currentIndexExperiencia * 100) + '%)' }">
+                <h3>{{ itemExperiencia.title }}</h3>
+                <p>{{ itemExperiencia.institution }}</p>
+                <a href="{{ itemExperiencia.page }}" target="_blank">{{ itemExperiencia.page }}</a>
+                <h5>{{ itemExperiencia.description }}</h5>
+            </div>
+        </div>
+        <button class="prev-experiencia" (click)="moveCarouselExperiencia(-1)">&#10094;</button>
+        <button class="next-experiencia" (click)="moveCarouselExperiencia(1)">&#10095;</button>
+    </div>
+</section>
