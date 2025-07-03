@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Redirige todas las rutas al index.html de Angular
+        sessionStorage.redirect = location.pathname;
+        location.replace('/portfolio/');  // Ajusta si tu repo no es "portfolio"
+    </script>
+</head>
+
+<body>
+    <!-- Mensaje opcional para usuarios sin JavaScript -->
+    Redirigiendo a la página principal...
+</body>
+
+</html>
