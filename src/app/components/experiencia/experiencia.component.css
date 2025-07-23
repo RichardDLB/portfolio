@@ -15,7 +15,15 @@
 
 @media (max-width: 1200px) {
     .sectionExperiencia {
-        padding-top: 10%;
+        font-size: 200%;
+        padding-top: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sectionExperiencia {
+        font-size: 200%;
+        padding-top: 18%;
     }
 }
 

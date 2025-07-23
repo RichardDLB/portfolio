@@ -18,11 +18,28 @@
         align-items: center;
     }
 
+    
+
+}
+
+@media (max-width: 600px) {
+    .sectionBanner {
+        margin-top: 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .containerText {
         padding-top: 10%;
         margin-bottom: -10%;
+        font-size: 50%;
     }
-    
+
+    .containerAnimatedText {
+        font-size: 50%;
+    }
+
 }
 
 .container1 {

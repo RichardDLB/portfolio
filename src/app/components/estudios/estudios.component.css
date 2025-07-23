@@ -15,7 +15,15 @@
 
 @media (max-width: 1200px) {
     .sectionEstudios {
-        padding-top: 5%;
+        font-size: 200%;
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    .sectionEstudios {
+        font-size: 200%;
+        padding-top: 10%;
     }
 }
 
