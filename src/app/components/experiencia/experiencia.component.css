@@ -13,6 +13,12 @@
     font-size: 250%;
 }
 
+@media (max-width: 1200px) {
+    .sectionExperiencia {
+        padding-top: 10%;
+    }
+}
+
 .titleExperiencia {
     color: #45a049;
     white-space: nowrap;
@@ -26,6 +32,11 @@
     margin-left: 5%;
     margin-bottom: 3%;
 }
+
+.titleExperiencia, h3{
+    color: #45a049;
+}
+
 
 @keyframes typingExperiencia {
     0% {

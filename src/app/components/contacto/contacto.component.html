@@ -1,20 +1,21 @@
 <section class="sectionContacto" id="sectionContacto">
     <h2 class="titleContacto">Contacto</h2>
     <div class="contenidoContacto">
-        <form action="" class="formContacto">
+        <form class="formContacto" (ngSubmit)="sendEmail()" #contactForm="ngForm">
             <div>
                 <label for="name">Nombre:</label>
-                <input type="text" class="item-form">
+                <input type="text" class="item-form" name="from_name" [(ngModel)]="formData.name" required>
             </div>
             <div>
                 <label for="email">Correo:</label>
-                <input type="email" class="item-form">
+                <input type="email" class="item-form" name="from_email" [(ngModel)]="formData.email" required>
             </div>
             <div>
-                <label for="message">message:</label>
-                <textarea type="text" class="item-form"></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea class="item-form" id="message" name="message" [(ngModel)]="formData.message"
+                    required></textarea>
             </div>
-            <button type="submit" class="button-send">ENVIAR</button>
+            <button type="submit" class="button-send" [disabled]="!contactForm.form.valid">ENVIAR</button>
             <button type="reset" class="button-send">BORRAR</button>
         </form>
     </div>
