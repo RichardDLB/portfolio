@@ -10,7 +10,7 @@
     justify-content: space-around;
     background-color: dimgrey;
     border-radius: 8px;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 @media (max-width: 1200px) {

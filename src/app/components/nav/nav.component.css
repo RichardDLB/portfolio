@@ -1,130 +1,202 @@
 /* NAVBAR */
 nav {
-    display: flex;   
+  display: flex;
 }
+
 .containerNav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: dimgrey;
-    border-radius: 8px;
-    position: fixed; /* Fija la barra de navegación */
-    left: 0; /* La coloca en la parte izquierda */
-    width: 98.8%; /* Ocupa ancho de la pantalla */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-    margin-left: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: dimgrey;
+  border-radius: 8px;
+  position: fixed;
+  /* Fija la barra de navegación */
+  left: 0;
+  /* La coloca en la parte izquierda */
+  width: 98.8%;
+  /* Ocupa ancho de la pantalla */
+  z-index: 1000;
+  /* Asegura que esté por encima de otros elementos */
+  margin-left: 8px;
 }
 
 /* Media queries para ajustar la posición en pantallas más angostas */
 @media (max-width: 1200px) {
-    .containerNav  {
-        flex-direction: column;
-        position: inherit; /* Fija la barra de navegación */
-        justify-content: center;
-        align-items: center;
-    }
+  .containerNav {
+    flex-direction: column;
+    position: inherit;
+    /* Fija la barra de navegación */
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1200px) {
-    .listNav  {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  .listNav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    }
+  }
 }
 
 .logo a {
-    text-decoration: none;
-    /* Elimina la subrayado del enlace */
-    color: inherit;
-    /* Hereda el color del contenedor */
+  text-decoration: none;
+  /* Elimina la subrayado del enlace */
+  color: inherit;
+  /* Hereda el color del contenedor */
 }
 
 .logo h1 {
-    color: white;
+  color: white;
 }
 
 .logo a:hover h1 {
-    color: #4CAF50;
+  color: #4CAF50;
 }
 
 .listNav {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .listNav a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .listNav a:hover h2 {
-    color: #4CAF50;
+  color: #4CAF50;
 }
 
 .logginButton {
-    font-family: monospace;
-    background-color: #4CAF50;
-    /* Color de fondo */
-    border: none;
-    /* Sin borde */
-    color: white;
-    /* Color del texto */
-    padding: 15px 32px;
-    /* Espaciado interior */
-    text-align: center;
-    /* Alineación del texto */
-    text-decoration: none;
-    /* Sin subrayado */
-    display: inline-block;
-    /* Mostrar en línea */
-    font-size: 16px;
-    /* Tamaño de la fuente */
-    margin: 4px 2px;
-    /* Margen exterior */
-    cursor: pointer;
-    /* Cambiar cursor al pasar sobre el botón */
-    border-radius: 8px;
-    /* Bordes redondeados */
-    transition: background-color 0.3s;
-    /* Transición para el cambio de color */
+  font-family: monospace;
+  background-color: #4CAF50;
+  /* Color de fondo */
+  border: none;
+  /* Sin borde */
+  color: white;
+  /* Color del texto */
+  padding: 15px 32px;
+  /* Espaciado interior */
+  text-align: center;
+  /* Alineación del texto */
+  text-decoration: none;
+  /* Sin subrayado */
+  display: inline-block;
+  /* Mostrar en línea */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  margin: 4px 2px;
+  /* Margen exterior */
+  cursor: pointer;
+  /* Cambiar cursor al pasar sobre el botón */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s;
+  /* Transición para el cambio de color */
 }
 
 .logginButton:hover {
-    background-color: #45a049;
-    /* Color de fondo al pasar el cursor */
+  background-color: #45a049;
+  /* Color de fondo al pasar el cursor */
 }
 
 .descargarCV {
-    font-family: monospace;
-    background-color: #4CAF50;
-    /* Color de fondo */
-    border: none;
-    /* Sin borde */
-    color: white;
-    /* Color del texto */
-    padding: 15px 32px;
-    /* Espaciado interior */
-    text-align: center;
-    /* Alineación del texto */
-    text-decoration: none;
-    /* Sin subrayado */
-    display: inline-block;
-    /* Mostrar en línea */
-    font-size: 16px;
-    /* Tamaño de la fuente */
-    margin: 4px 2px;
-    /* Margen exterior */
-    cursor: pointer;
-    /* Cambiar cursor al pasar sobre el botón */
-    border-radius: 8px;
-    /* Bordes redondeados */
-    transition: background-color 0.3s;
-    /* Transición para el cambio de color */
+  font-family: monospace;
+  background-color: #4CAF50;
+  /* Color de fondo */
+  border: none;
+  /* Sin borde */
+  color: white;
+  /* Color del texto */
+  padding: 15px 10px;
+  /* Espaciado interior */
+  text-align: center;
+  /* Alineación del texto */
+  text-decoration: none;
+  /* Sin subrayado */
+  display: inline-block;
+  /* Mostrar en línea */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  margin: 4px 2px;
+  /* Margen exterior */
+  cursor: pointer;
+  /* Cambiar cursor al pasar sobre el botón */
+  border-radius: 8px;
+  /* Bordes redondeados */
+  transition: background-color 0.3s;
+  /* Transición para el cambio de color */
 }
 
 .descargarCV:hover {
-    background-color: #45a049;
-    /* Color de fondo al pasar el cursor */
+  background-color: #45a049;
+  /* Color de fondo al pasar el cursor */
 }
+
+
+/* modal */
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  background: #2b2b2b;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  min-width: 300px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.modalButtons button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: monospace;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.modalButtons button:hover {
+  background-color: #45a049;
+}
+
+.closeBtn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* iconos */
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: white;
+  transition: fill 0.3s;
+}
+
